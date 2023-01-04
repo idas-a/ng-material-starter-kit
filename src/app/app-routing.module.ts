@@ -6,6 +6,7 @@ import { CategoriesMenuComponent } from './components/categories-menu/categories
 import { PublicHolidaysComponent } from './components/public-holidays/public-holidays.component';
 import { CategoriesComponent } from './components/categories/categories.component';
 import { NamesListComponent } from './components/names-list/names-list.component';
+import { CryptoListComponent } from './components/crypto-list/crypto-list.component';
 import { CryptoComponentModule } from './components/crypto/crypto.component-module';
 import { CryptoServiceModule } from './services/crypto.service-module';
 import { CategoriesListComponentModule } from './components/categories-list/categories-list.component-module';
@@ -16,6 +17,7 @@ import { PublicHolidaysComponentModule } from './components/public-holidays/publ
 import { PublicHolidaysServiceModule } from './services/public-holidays.service-module';
 import { CategoriesComponentModule } from './components/categories/categories.component-module';
 import { NamesListComponentModule } from './components/names-list/names-list.component-module';
+import { CryptoListComponentModule } from './components/crypto-list/crypto-list.component-module';
 
 @NgModule({
   imports: [RouterModule.forRoot([{
@@ -24,7 +26,8 @@ import { NamesListComponentModule } from './components/names-list/names-list.com
     path: 'categories-menu', component: CategoriesMenuComponent }, {
     path: 'public-holidays', component: PublicHolidaysComponent }, {
     path: 'categories', component: CategoriesComponent }, {
-    path: 'list-1-single-list-names', component: NamesListComponent }]), CryptoComponentModule, CryptoServiceModule, CategoriesListComponentModule, CategoriesServiceModule, CategoriesMenuComponentModule, CategoriesMenuServiceModule, PublicHolidaysComponentModule, PublicHolidaysServiceModule, CategoriesComponentModule, NamesListComponentModule],
+    path: 'list-1-single-list-names', component: NamesListComponent }, {
+    path: 'list-1-single-radio-crypto', component: CryptoListComponent }]), CryptoComponentModule, CryptoServiceModule, CategoriesListComponentModule, CategoriesServiceModule, CategoriesMenuComponentModule, CategoriesMenuServiceModule, PublicHolidaysComponentModule, PublicHolidaysServiceModule, CategoriesComponentModule, NamesListComponentModule, CryptoListComponentModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
