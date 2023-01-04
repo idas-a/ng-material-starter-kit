@@ -11,7 +11,7 @@ import {CategoriesService} from "../../services/categories.service";
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CategoriesComponent {
-  readonly list$: Observable<ProductModel[]> = this._categoriesService.getAll().pipe(map(() => []));
+  readonly list$: Observable<ProductModel[]> = this._categoriesService.getAll();
 
   constructor(private _categoriesService: CategoriesService) {
   }

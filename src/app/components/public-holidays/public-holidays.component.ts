@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
-import {Observable} from "rxjs";
+import {delay, map, Observable} from "rxjs";
 import {PublicHolidaysModel} from "../../models/public-holidays.model";
 import {PublicHolidaysService} from "../../services/public-holidays.service";
 
