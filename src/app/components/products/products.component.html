@@ -9,9 +9,11 @@
         </mat-list-item>
       </ng-container>
     </mat-list>
+
     <ng-template #empty>
       There is no data!
     </ng-template>
+
     <ng-template #loading>
       <mat-progress-spinner
         [color]="'primary'"
@@ -19,5 +21,6 @@
         [value]="50">
       </mat-progress-spinner>
     </ng-template>
+
   </mat-card-content>
 </mat-card>
