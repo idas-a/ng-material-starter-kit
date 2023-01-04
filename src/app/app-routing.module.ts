@@ -5,6 +5,7 @@ import { CategoriesListComponent } from './components/categories-list/categories
 import { CategoriesMenuComponent } from './components/categories-menu/categories-menu.component';
 import { PublicHolidaysComponent } from './components/public-holidays/public-holidays.component';
 import { CategoriesComponent } from './components/categories/categories.component';
+import { NamesListComponent } from './components/names-list/names-list.component';
 import { CryptoComponentModule } from './components/crypto/crypto.component-module';
 import { CryptoServiceModule } from './services/crypto.service-module';
 import { CategoriesListComponentModule } from './components/categories-list/categories-list.component-module';
@@ -14,6 +15,7 @@ import { CategoriesMenuServiceModule } from './services/categories-menu.service-
 import { PublicHolidaysComponentModule } from './components/public-holidays/public-holidays.component-module';
 import { PublicHolidaysServiceModule } from './services/public-holidays.service-module';
 import { CategoriesComponentModule } from './components/categories/categories.component-module';
+import { NamesListComponentModule } from './components/names-list/names-list.component-module';
 
 @NgModule({
   imports: [RouterModule.forRoot([{
@@ -21,7 +23,8 @@ import { CategoriesComponentModule } from './components/categories/categories.co
     path: 'checkbox-categories', component: CategoriesListComponent }, {
     path: 'categories-menu', component: CategoriesMenuComponent }, {
     path: 'public-holidays', component: PublicHolidaysComponent }, {
-    path: 'categories', component: CategoriesComponent }]), CryptoComponentModule, CryptoServiceModule, CategoriesListComponentModule, CategoriesServiceModule, CategoriesMenuComponentModule, CategoriesMenuServiceModule, PublicHolidaysComponentModule, PublicHolidaysServiceModule, CategoriesComponentModule],
+    path: 'categories', component: CategoriesComponent }, {
+    path: 'list-1-single-list-names', component: NamesListComponent }]), CryptoComponentModule, CryptoServiceModule, CategoriesListComponentModule, CategoriesServiceModule, CategoriesMenuComponentModule, CategoriesMenuServiceModule, PublicHolidaysComponentModule, PublicHolidaysServiceModule, CategoriesComponentModule, NamesListComponentModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
