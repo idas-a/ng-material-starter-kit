@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
-import {Observable} from "rxjs";
+import {map, Observable} from "rxjs";
 import {ProductModel} from "../../models/product.model";
 import {CategoriesService} from "../../services/categories.service";
 
@@ -11,7 +11,7 @@ import {CategoriesService} from "../../services/categories.service";
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CategoriesComponent {
-  readonly list$: Observable<ProductModel[]> = this._categoriesService.getAll();
+  readonly list$: Observable<ProductModel[]> = this._categoriesService.getAll().pipe(map(() => []));
 
   constructor(private _categoriesService: CategoriesService) {
   }
