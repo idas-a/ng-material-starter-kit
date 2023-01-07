@@ -10,6 +10,7 @@ import { CryptoListComponent } from './components/crypto-list/crypto-list.compon
 import { TableNamesComponent } from './components/table-names/table-names.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ProductComponent } from './components/product/product.component';
+import { ProductSearchComponent } from './components/product-search/product-search.component';
 import { CryptoComponentModule } from './components/crypto/crypto.component-module';
 import { CryptoServiceModule } from './services/crypto.service-module';
 import { CategoriesListComponentModule } from './components/categories-list/categories-list.component-module';
@@ -26,6 +27,7 @@ import { ProductsComponentModule } from './components/products/products.componen
 import { ProductsServiceModule } from './services/products.service-module';
 import { ProductComponentModule } from './components/product/product.component-module';
 import { ProductsSearchServiceModule } from './services/products-search.service-module';
+import { ProductSearchComponentModule } from './components/product-search/product-search.component-module';
 
 @NgModule({
   imports: [RouterModule.forRoot([{
@@ -38,7 +40,8 @@ import { ProductsSearchServiceModule } from './services/products-search.service-
     path: 'list-1-single-radio-crypto', component: CryptoListComponent }, {
     path: 'list-1-single-table-names', component: TableNamesComponent }, {
     path: 'products', component: ProductsComponent }, {
-    path: 'list-1-multi-list-products', component: ProductComponent }]), CryptoComponentModule, CryptoServiceModule, CategoriesListComponentModule, CategoriesServiceModule, CategoriesMenuComponentModule, CategoriesMenuServiceModule, PublicHolidaysComponentModule, PublicHolidaysServiceModule, CategoriesComponentModule, NamesListComponentModule, CryptoListComponentModule, TableNamesComponentModule, ProductsComponentModule, ProductsServiceModule, ProductComponentModule, ProductsSearchServiceModule],
+    path: 'list-1-multi-list-products', component: ProductComponent }, {
+    path: 'product-search', component: ProductSearchComponent }]), CryptoComponentModule, CryptoServiceModule, CategoriesListComponentModule, CategoriesServiceModule, CategoriesMenuComponentModule, CategoriesMenuServiceModule, PublicHolidaysComponentModule, PublicHolidaysServiceModule, CategoriesComponentModule, NamesListComponentModule, CryptoListComponentModule, TableNamesComponentModule, ProductsComponentModule, ProductsServiceModule, ProductComponentModule, ProductsSearchServiceModule, ProductSearchComponentModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
