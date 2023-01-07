@@ -1,0 +1,5 @@
+<mat-list role="list">
+  <mat-list-item role="listitem" *ngFor="let item of list$ | async">
+    <img style="height: 40px;" [src]="item.image"> {{item.title}} for ${{item.price}}
+  </mat-list-item>
+</mat-list>
