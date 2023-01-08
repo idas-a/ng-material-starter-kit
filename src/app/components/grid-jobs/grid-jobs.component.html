@@ -1,0 +1,11 @@
+<mat-grid-list cols="2" rowHeight="100px">
+  <mat-grid-tile *ngFor="let item of element$ | async">
+  <mat-card>
+    <mat-card-content>
+      {{item.title}}
+      <br>
+      {{item.description}}
+    </mat-card-content>
+  </mat-card>
+</mat-grid-tile>
+</mat-grid-list>

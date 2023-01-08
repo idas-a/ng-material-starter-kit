@@ -13,6 +13,7 @@ import { ProductComponent } from './components/product/product.component';
 import { ProductSearchComponent } from './components/product-search/product-search.component';
 import { CryptoTableComponent } from './components/crypto-table/crypto-table.component';
 import { JobPostComponent } from './components/job-post/job-post.component';
+import { GridJobsComponent } from './components/grid-jobs/grid-jobs.component';
 import { CryptoComponentModule } from './components/crypto/crypto.component-module';
 import { CryptoServiceModule } from './services/crypto.service-module';
 import { CategoriesListComponentModule } from './components/categories-list/categories-list.component-module';
@@ -33,6 +34,7 @@ import { ProductSearchComponentModule } from './components/product-search/produc
 import { CryptoTableComponentModule } from './components/crypto-table/crypto-table.component-module';
 import { JobPostComponentModule } from './components/job-post/job-post.component-module';
 import { JobPostServiceModule } from './services/job-post.service-module';
+import { GridJobsComponentModule } from './components/grid-jobs/grid-jobs.component-module';
 
 @NgModule({
   imports: [RouterModule.forRoot([{
@@ -48,7 +50,8 @@ import { JobPostServiceModule } from './services/job-post.service-module';
     path: 'list-1-multi-list-products', component: ProductComponent }, {
     path: 'product-search', component: ProductSearchComponent }, {
     path: 'crypto-table', component: CryptoTableComponent }, {
-    path: 'job-post-table', component: JobPostComponent }]), CryptoComponentModule, CryptoServiceModule, CategoriesListComponentModule, CategoriesServiceModule, CategoriesMenuComponentModule, CategoriesMenuServiceModule, PublicHolidaysComponentModule, PublicHolidaysServiceModule, CategoriesComponentModule, NamesListComponentModule, CryptoListComponentModule, TableNamesComponentModule, ProductsComponentModule, ProductsServiceModule, ProductComponentModule, ProductsSearchServiceModule, ProductSearchComponentModule, CryptoTableComponentModule, JobPostComponentModule, JobPostServiceModule],
+    path: 'job-post-table', component: JobPostComponent }, {
+    path: 'list-1-multi-grid-list-jobs', component: GridJobsComponent }]), CryptoComponentModule, CryptoServiceModule, CategoriesListComponentModule, CategoriesServiceModule, CategoriesMenuComponentModule, CategoriesMenuServiceModule, PublicHolidaysComponentModule, PublicHolidaysServiceModule, CategoriesComponentModule, NamesListComponentModule, CryptoListComponentModule, TableNamesComponentModule, ProductsComponentModule, ProductsServiceModule, ProductComponentModule, ProductsSearchServiceModule, ProductSearchComponentModule, CryptoTableComponentModule, JobPostComponentModule, JobPostServiceModule, GridJobsComponentModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
