@@ -1,0 +1,8 @@
+<h1> Influencers and Followers </h1>
+<mat-list role="list">
+  <mat-list-item role="listitem" *ngFor="let item of list$ | async">
+    <img style="height: 50px;border-radius:50%" [src]="item.avatar"> {{item.name}}
+ </mat-list-item>
+</mat-list>
+
+

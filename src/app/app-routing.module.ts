@@ -14,6 +14,7 @@ import { ProductSearchComponent } from './components/product-search/product-sear
 import { CryptoTableComponent } from './components/crypto-table/crypto-table.component';
 import { JobPostComponent } from './components/job-post/job-post.component';
 import { GridJobsComponent } from './components/grid-jobs/grid-jobs.component';
+import { InfluencerComponent } from './components/influencer/influencer.component';
 import { CryptoComponentModule } from './components/crypto/crypto.component-module';
 import { CryptoServiceModule } from './services/crypto.service-module';
 import { CategoriesListComponentModule } from './components/categories-list/categories-list.component-module';
@@ -35,6 +36,8 @@ import { CryptoTableComponentModule } from './components/crypto-table/crypto-tab
 import { JobPostComponentModule } from './components/job-post/job-post.component-module';
 import { JobPostServiceModule } from './services/job-post.service-module';
 import { GridJobsComponentModule } from './components/grid-jobs/grid-jobs.component-module';
+import { InfluencerComponentModule } from './components/influencer/influencer.component-module';
+import { InfluencerServiceModule } from './services/influencer.service-module';
 
 @NgModule({
   imports: [RouterModule.forRoot([{
@@ -51,7 +54,8 @@ import { GridJobsComponentModule } from './components/grid-jobs/grid-jobs.compon
     path: 'product-search', component: ProductSearchComponent }, {
     path: 'crypto-table', component: CryptoTableComponent }, {
     path: 'job-post-table', component: JobPostComponent }, {
-    path: 'list-1-multi-grid-list-jobs', component: GridJobsComponent }]), CryptoComponentModule, CryptoServiceModule, CategoriesListComponentModule, CategoriesServiceModule, CategoriesMenuComponentModule, CategoriesMenuServiceModule, PublicHolidaysComponentModule, PublicHolidaysServiceModule, CategoriesComponentModule, NamesListComponentModule, CryptoListComponentModule, TableNamesComponentModule, ProductsComponentModule, ProductsServiceModule, ProductComponentModule, ProductsSearchServiceModule, ProductSearchComponentModule, CryptoTableComponentModule, JobPostComponentModule, JobPostServiceModule, GridJobsComponentModule],
+    path: 'list-1-multi-grid-list-jobs', component: GridJobsComponent }, {
+    path: 'list-1-nested-list-influencers', component: InfluencerComponent }]), CryptoComponentModule, CryptoServiceModule, CategoriesListComponentModule, CategoriesServiceModule, CategoriesMenuComponentModule, CategoriesMenuServiceModule, PublicHolidaysComponentModule, PublicHolidaysServiceModule, CategoriesComponentModule, NamesListComponentModule, CryptoListComponentModule, TableNamesComponentModule, ProductsComponentModule, ProductsServiceModule, ProductComponentModule, ProductsSearchServiceModule, ProductSearchComponentModule, CryptoTableComponentModule, JobPostComponentModule, JobPostServiceModule, GridJobsComponentModule, InfluencerComponentModule, InfluencerServiceModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
